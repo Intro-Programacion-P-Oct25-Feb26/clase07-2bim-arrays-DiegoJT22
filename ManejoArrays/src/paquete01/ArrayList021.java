@@ -34,6 +34,7 @@ public class ArrayList021 {
         for (int i = 0; i < nombres.size(); i++) {
             auxiliar = nombres.get(i);
             auxiliar = auxiliar.substring(0, 1);
+            auxiliar = convertirMinusculas(auxiliar);
             arreglo.add(auxiliar);
         }
         
@@ -75,6 +76,10 @@ public class ArrayList021 {
         }
         return cadenaFinal;
     }    
+    public static String convertirMinusculas(String c){
+        String miValor = c.toLowerCase();
+        return miValor;
+    }
         
     
 }
